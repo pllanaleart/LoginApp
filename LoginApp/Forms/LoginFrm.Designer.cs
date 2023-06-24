@@ -63,7 +63,7 @@
             label5.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
-            label5.Font = new Font("Malgun Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Malgun Gothic", 9F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label5.Location = new Point(348, 219);
             label5.Name = "label5";
             label5.Size = new Size(67, 20);
@@ -86,6 +86,7 @@
             // 
             lblForgotPass.AutoSize = true;
             lblForgotPass.Cursor = Cursors.Hand;
+            lblForgotPass.Font = new Font("Segoe UI", 9F, FontStyle.Underline, GraphicsUnit.Point);
             lblForgotPass.Location = new Point(120, 118);
             lblForgotPass.Name = "lblForgotPass";
             lblForgotPass.Size = new Size(125, 20);

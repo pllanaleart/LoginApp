@@ -28,224 +28,268 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label8 = new Label();
-            comboBox1 = new ComboBox();
+            btnRegister = new Button();
+            txtEmri = new TextBox();
+            txtMbiemri = new TextBox();
+            txtTelefoni = new TextBox();
+            txtEmail = new TextBox();
+            txtPassword = new TextBox();
+            txtAdresa = new TextBox();
+            txtRePass = new TextBox();
+            lblEmri = new Label();
+            lblMbiemri = new Label();
+            lblTelefoni = new Label();
+            lblEmail = new Label();
+            lblPassword = new Label();
+            lblRePass = new Label();
+            lblAdresa = new Label();
+            datePicDitlindja = new DateTimePicker();
+            lblDitlindja = new Label();
+            cmbGjinia = new ComboBox();
+            groupBoxRegister = new GroupBox();
+            btnClose = new Button();
+            lblGjinia = new Label();
+            groupBoxRegister.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
+            // btnRegister
             // 
-            button1.Location = new Point(637, 116);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnRegister.Location = new Point(411, 319);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(159, 29);
+            btnRegister.TabIndex = 0;
+            btnRegister.Text = "Register";
+            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
-            // textBox1
+            // txtEmri
             // 
-            textBox1.Location = new Point(146, 38);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 1;
+            txtEmri.Location = new Point(39, 56);
+            txtEmri.Name = "txtEmri";
+            txtEmri.Size = new Size(219, 27);
+            txtEmri.TabIndex = 1;
             // 
-            // textBox2
+            // txtMbiemri
             // 
-            textBox2.Location = new Point(146, 92);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 2;
+            txtMbiemri.Location = new Point(39, 121);
+            txtMbiemri.Name = "txtMbiemri";
+            txtMbiemri.Size = new Size(219, 27);
+            txtMbiemri.TabIndex = 2;
             // 
-            // textBox3
+            // txtTelefoni
             // 
-            textBox3.Location = new Point(146, 148);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 3;
+            txtTelefoni.Location = new Point(39, 182);
+            txtTelefoni.Name = "txtTelefoni";
+            txtTelefoni.Size = new Size(219, 27);
+            txtTelefoni.TabIndex = 3;
             // 
-            // textBox4
+            // txtEmail
             // 
-            textBox4.Location = new Point(146, 202);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 4;
+            txtEmail.Location = new Point(39, 242);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(219, 27);
+            txtEmail.TabIndex = 4;
             // 
-            // textBox5
+            // txtPassword
             // 
-            textBox5.Location = new Point(146, 247);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 27);
-            textBox5.TabIndex = 5;
+            txtPassword.Location = new Point(39, 300);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(219, 27);
+            txtPassword.TabIndex = 5;
             // 
-            // textBox6
+            // txtAdresa
             // 
-            textBox6.Location = new Point(146, 358);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(217, 59);
-            textBox6.TabIndex = 6;
+            txtAdresa.Location = new Point(377, 121);
+            txtAdresa.Multiline = true;
+            txtAdresa.Name = "txtAdresa";
+            txtAdresa.Size = new Size(217, 84);
+            txtAdresa.TabIndex = 6;
             // 
-            // textBox7
+            // txtRePass
             // 
-            textBox7.Location = new Point(146, 307);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(125, 27);
-            textBox7.TabIndex = 6;
+            txtRePass.Location = new Point(39, 367);
+            txtRePass.Name = "txtRePass";
+            txtRePass.Size = new Size(219, 27);
+            txtRePass.TabIndex = 6;
             // 
-            // label1
+            // lblEmri
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(38, 37);
-            label1.Name = "label1";
-            label1.Size = new Size(39, 20);
-            label1.TabIndex = 7;
-            label1.Text = "emri";
-            label1.Click += label1_Click;
+            lblEmri.AutoSize = true;
+            lblEmri.Location = new Point(39, 33);
+            lblEmri.Name = "lblEmri";
+            lblEmri.Size = new Size(39, 20);
+            lblEmri.TabIndex = 7;
+            lblEmri.Text = "Emri";
+            lblEmri.Click += label1_Click;
             // 
-            // label2
+            // lblMbiemri
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(38, 95);
-            label2.Name = "label2";
-            label2.Size = new Size(65, 20);
-            label2.TabIndex = 8;
-            label2.Text = "mbiemri";
+            lblMbiemri.AutoSize = true;
+            lblMbiemri.Location = new Point(39, 98);
+            lblMbiemri.Name = "lblMbiemri";
+            lblMbiemri.Size = new Size(65, 20);
+            lblMbiemri.TabIndex = 8;
+            lblMbiemri.Text = "Mbiemri";
             // 
-            // label3
+            // lblTelefoni
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(38, 155);
-            label3.Name = "label3";
-            label3.Size = new Size(85, 20);
-            label3.TabIndex = 9;
-            label3.Text = "Nr telefonit";
+            lblTelefoni.AutoSize = true;
+            lblTelefoni.Location = new Point(39, 158);
+            lblTelefoni.Name = "lblTelefoni";
+            lblTelefoni.Size = new Size(85, 20);
+            lblTelefoni.TabIndex = 9;
+            lblTelefoni.Text = "Nr telefonit";
             // 
-            // label4
+            // lblEmail
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(38, 209);
-            label4.Name = "label4";
-            label4.Size = new Size(46, 20);
-            label4.TabIndex = 10;
-            label4.Text = "email";
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(39, 219);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(46, 20);
+            lblEmail.TabIndex = 10;
+            lblEmail.Text = "Email";
             // 
-            // label5
+            // lblPassword
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(38, 254);
-            label5.Name = "label5";
-            label5.Size = new Size(72, 20);
-            label5.TabIndex = 11;
-            label5.Text = "password";
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(39, 277);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(70, 20);
+            lblPassword.TabIndex = 11;
+            lblPassword.Text = "Password";
             // 
-            // label6
+            // lblRePass
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(21, 314);
-            label6.Name = "label6";
-            label6.Size = new Size(119, 20);
-            label6.TabIndex = 12;
-            label6.Text = "repeat password";
+            lblRePass.AutoSize = true;
+            lblRePass.Location = new Point(39, 344);
+            lblRePass.Name = "lblRePass";
+            lblRePass.Size = new Size(123, 20);
+            lblRePass.TabIndex = 12;
+            lblRePass.Text = "Repeat password";
             // 
-            // label7
+            // lblAdresa
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(38, 365);
-            label7.Name = "label7";
-            label7.Size = new Size(53, 20);
-            label7.TabIndex = 13;
-            label7.Text = "adresa";
+            lblAdresa.AutoSize = true;
+            lblAdresa.Location = new Point(377, 98);
+            lblAdresa.Name = "lblAdresa";
+            lblAdresa.Size = new Size(55, 20);
+            lblAdresa.TabIndex = 13;
+            lblAdresa.Text = "Adresa";
             // 
-            // dateTimePicker1
+            // datePicDitlindja
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(527, 30);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(124, 27);
-            dateTimePicker1.TabIndex = 14;
+            datePicDitlindja.Format = DateTimePickerFormat.Short;
+            datePicDitlindja.Location = new Point(377, 56);
+            datePicDitlindja.Name = "datePicDitlindja";
+            datePicDitlindja.Size = new Size(152, 27);
+            datePicDitlindja.TabIndex = 14;
             // 
-            // label8
+            // lblDitlindja
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(407, 30);
-            label8.Name = "label8";
-            label8.Size = new Size(72, 20);
-            label8.TabIndex = 15;
-            label8.Text = "ditelindja";
+            lblDitlindja.AutoSize = true;
+            lblDitlindja.Location = new Point(377, 33);
+            lblDitlindja.Name = "lblDitlindja";
+            lblDitlindja.Size = new Size(74, 20);
+            lblDitlindja.TabIndex = 15;
+            lblDitlindja.Text = "Ditelindja";
             // 
-            // comboBox1
+            // cmbGjinia
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "M", "F" });
-            comboBox1.Location = new Point(431, 127);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 16;
+            cmbGjinia.FormattingEnabled = true;
+            cmbGjinia.Items.AddRange(new object[] { "M", "F" });
+            cmbGjinia.Location = new Point(378, 241);
+            cmbGjinia.Name = "cmbGjinia";
+            cmbGjinia.Size = new Size(151, 28);
+            cmbGjinia.TabIndex = 16;
+            // 
+            // groupBoxRegister
+            // 
+            groupBoxRegister.Controls.Add(btnClose);
+            groupBoxRegister.Controls.Add(lblGjinia);
+            groupBoxRegister.Controls.Add(txtEmri);
+            groupBoxRegister.Controls.Add(btnRegister);
+            groupBoxRegister.Controls.Add(datePicDitlindja);
+            groupBoxRegister.Controls.Add(lblDitlindja);
+            groupBoxRegister.Controls.Add(cmbGjinia);
+            groupBoxRegister.Controls.Add(txtMbiemri);
+            groupBoxRegister.Controls.Add(txtTelefoni);
+            groupBoxRegister.Controls.Add(txtEmail);
+            groupBoxRegister.Controls.Add(lblAdresa);
+            groupBoxRegister.Controls.Add(txtPassword);
+            groupBoxRegister.Controls.Add(txtAdresa);
+            groupBoxRegister.Controls.Add(lblRePass);
+            groupBoxRegister.Controls.Add(txtRePass);
+            groupBoxRegister.Controls.Add(lblPassword);
+            groupBoxRegister.Controls.Add(lblEmri);
+            groupBoxRegister.Controls.Add(lblEmail);
+            groupBoxRegister.Controls.Add(lblMbiemri);
+            groupBoxRegister.Controls.Add(lblTelefoni);
+            groupBoxRegister.Location = new Point(-6, 4);
+            groupBoxRegister.Name = "groupBoxRegister";
+            groupBoxRegister.Size = new Size(658, 420);
+            groupBoxRegister.TabIndex = 17;
+            groupBoxRegister.TabStop = false;
+            groupBoxRegister.Text = "Register:";
+            // 
+            // btnClose
+            // 
+            btnClose.FlatAppearance.BorderColor = Color.Black;
+            btnClose.Location = new Point(427, 367);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(125, 27);
+            btnClose.TabIndex = 18;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
+            // 
+            // lblGjinia
+            // 
+            lblGjinia.AutoSize = true;
+            lblGjinia.Location = new Point(378, 218);
+            lblGjinia.Name = "lblGjinia";
+            lblGjinia.Size = new Size(47, 20);
+            lblGjinia.TabIndex = 17;
+            lblGjinia.Text = "Gjinia";
             // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(comboBox1);
-            Controls.Add(label8);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(button1);
+            ClientSize = new Size(659, 428);
+            Controls.Add(groupBoxRegister);
+            MaximizeBox = false;
+            MaximumSize = new Size(677, 475);
+            MinimumSize = new Size(677, 475);
             Name = "Register";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Register";
+            groupBoxRegister.ResumeLayout(false);
+            groupBoxRegister.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private DateTimePicker dateTimePicker1;
-        private Label label8;
-        private ComboBox comboBox1;
+        private Button btnRegister;
+        private TextBox txtEmri;
+        private TextBox txtMbiemri;
+        private TextBox txtTelefoni;
+        private TextBox txtEmail;
+        private TextBox txtPassword;
+        private TextBox txtAdresa;
+        private TextBox txtRePass;
+        private Label lblEmri;
+        private Label lblMbiemri;
+        private Label lblTelefoni;
+        private Label lblEmail;
+        private Label lblPassword;
+        private Label lblRePass;
+        private Label lblAdresa;
+        private DateTimePicker datePicDitlindja;
+        private Label lblDitlindja;
+        private ComboBox cmbGjinia;
+        private GroupBox groupBoxRegister;
+        private Label lblGjinia;
+        private Button btnClose;
     }
 }
