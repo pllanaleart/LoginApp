@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using LoginApp.Entities;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,8 +17,8 @@ namespace LoginApp.Forms
 {
     public partial class LoginFrm : Form
     {
-        public static string conString = "Data Source=DESKTOP-2FODQJ3;Initial Catalog=LoginDb;Integrated Security=True;TrustServerCertificate=True";
-
+        
+       
         public LoginFrm()
         {
             InitializeComponent();
@@ -27,18 +28,30 @@ namespace LoginApp.Forms
         {
             try
             {
-                SqlConnection sql = new SqlConnection(conString);
+                SqlConnection sql = new SqlConnection(Properties.Settings.Default.ConString);
                 String query = "Select * from [Identity] where email ='" + txtUsername.Text.Trim() + "'and password='" + txtPassword.Text.Trim() + "'";
                 SqlCommand cmd = new SqlCommand(query, sql);
                 sql.Open();
                 cmd.CommandType = CommandType.Text;
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
-                DataTable dataTable = new DataTable();
-                sqlDataAdapter.Fill(dataTable);
-                DataTable dt = new DataTable();
-                if (dataTable.Rows.Count == 1)
+                SqlDataReader reader = cmd.ExecuteReader();
+                IdentityEntity identityEntity = new IdentityEntity();
+                while (reader.Read())
                 {
-                    Dashboard dashboard = new Dashboard();
+                    identityEntity.Id = (int)reader["id"];
+                    identityEntity.Emri = (string)reader["emri"];
+                    identityEntity.Mbiemri = (string)reader["mbiemri"];
+                    identityEntity.Email = (string)reader["email"];
+                    identityEntity.Ditlindja = (DateTime)reader["ditelindja"];
+                    identityEntity.Adresa = (string)reader["adresa"];
+                    identityEntity.Gjinia = (string)reader["gjinia"];
+                    identityEntity.Password = (string)reader["password"];
+                    identityEntity.NrTelefonit = (string)reader["nrTelefonit"];
+                }
+               
+                if (identityEntity.Id >0)
+                {
+                    Dashboard dashboard = new Dashboard(identityEntity);
                     dashboard.Show();
                     this.Hide();
                 }
@@ -78,7 +91,9 @@ namespace LoginApp.Forms
 
         private void lblForgotPass_Click(object sender, EventArgs e)
         {
-
+            ForgotPassword forgotPassword = new ForgotPassword();
+            forgotPassword.Show();
+            this.Hide();
         }
     }
 }
